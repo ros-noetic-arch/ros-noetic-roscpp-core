@@ -1,7 +1,7 @@
 pkgbase = ros-noetic-roscpp-core
 	pkgdesc = ROS - Underlying data libraries for roscpp messages.
 	pkgver = 0.7.1
-	pkgrel = 2
+	pkgrel = 1
 	url = https://www.wiki.ros.org/roscpp_core
 	arch = i686
 	arch = x86_64
@@ -9,15 +9,44 @@ pkgbase = ros-noetic-roscpp-core
 	arch = armv7h
 	arch = armv6h
 	license = BSD
+	makedepends = boost
 	makedepends = cmake
+	makedepends = console-bridge
 	makedepends = ros-build-tools
 	makedepends = ros-noetic-catkin
+	source = ros-noetic-cpp-common-0.7.1.tar.gz::https://github.com/ros/roscpp_core/archive/0.7.1.tar.gz
+	sha256sums = 8fddbafd3fc76470e4a706f7923b7a03f914943d7edb0b70273d8b98e003b108
+
+pkgname = ros-noetic-cpp-common
+	pkgdesc = ROS - cpp_common contains C++ code for doing things that are not necessarily ROS related, but are useful for multiple packages.
+	url = https://wiki.ros.org/cpp_common
+	depends = boost
+	depends = console-bridge
+
+pkgname = ros-noetic-roscpp-core
+	pkgdesc = ROS - Underlying data libraries for roscpp messages.
+	url = https://www.wiki.ros.org/roscpp_core
 	depends = ros-noetic-roscpp-traits
 	depends = ros-noetic-cpp-common
 	depends = ros-noetic-rostime
 	depends = ros-noetic-roscpp-serialization
-	source = ros-noetic-roscpp-core-0.7.1.tar.gz::https://github.com/ros/roscpp_core/archive/0.7.1.tar.gz
-	sha256sums = 8fddbafd3fc76470e4a706f7923b7a03f914943d7edb0b70273d8b98e003b108
 
-pkgname = ros-noetic-roscpp-core
+pkgname = ros-noetic-roscpp-serialization
+	pkgdesc = ROS - roscpp_serialization contains the code for serialization as described in MessagesSerializationAndAdaptingTypes.
+	url = https://wiki.ros.org/roscpp_serialization
+	depends = ros-noetic-roscpp-traits
+	depends = ros-noetic-cpp-common
+	depends = ros-noetic-rostime
+
+pkgname = ros-noetic-roscpp-traits
+	pkgdesc = ROS - roscpp_traits contains the message traits code as described in MessagesTraits.
+	url = https://wiki.ros.org/roscpp_traits
+	depends = ros-noetic-rostime
+	depends = ros-noetic-cpp-common
+
+pkgname = ros-noetic-rostime
+	pkgdesc = ROS - Time and Duration implementations for C++ libraries, including roscpp.
+	url = https://wiki.ros.org/rostime
+	depends = boost
+	depends = ros-noetic-cpp-common
 
