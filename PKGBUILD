@@ -14,7 +14,7 @@ arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
 pkgrel=1
 license=('BSD')
 
-source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/roscpp_core/archive/${pkgver}.tar.gz")
+source=("${pkgbase}-${pkgver}.tar.gz"::"https://github.com/ros/roscpp_core/archive/${pkgver}.tar.gz")
 sha256sums=('8fddbafd3fc76470e4a706f7923b7a03f914943d7edb0b70273d8b98e003b108')
 
 makedepends=(

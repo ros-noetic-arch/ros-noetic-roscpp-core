@@ -14,7 +14,7 @@ pkgbase = ros-noetic-roscpp-core
 	makedepends = console-bridge
 	makedepends = ros-build-tools
 	makedepends = ros-noetic-catkin
-	source = ros-noetic-cpp-common-0.7.1.tar.gz::https://github.com/ros/roscpp_core/archive/0.7.1.tar.gz
+	source = ros-noetic-roscpp-core-0.7.1.tar.gz::https://github.com/ros/roscpp_core/archive/0.7.1.tar.gz
 	sha256sums = 8fddbafd3fc76470e4a706f7923b7a03f914943d7edb0b70273d8b98e003b108
 
 pkgname = ros-noetic-cpp-common
